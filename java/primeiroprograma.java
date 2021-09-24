@@ -1,8 +1,8 @@
-package primeiroprograma;
+package java
 
-public class PrimeiroPrograma{
+public class PrimeiroPrograma {
 
-    public static void main(strind[] args) {
-        
+    public static void main(string[] args) {
+        System.out.print("olá, mundo!");
     }
 }
