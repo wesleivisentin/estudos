@@ -31,7 +31,7 @@ public class TelaSoma extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txtN2 = new javax.swing.JTextField();
         lblResultado = new javax.swing.JLabel();
-        btnSoma = new javax.swing.JButton();
+        lblSoma = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,10 +45,10 @@ public class TelaSoma extends javax.swing.JFrame {
 
         lblResultado.setText("0");
 
-        btnSoma.setText("=");
-        btnSoma.addActionListener(new java.awt.event.ActionListener() {
+        lblSoma.setText("=");
+        lblSoma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSomaActionPerformed(evt);
+                lblSomaActionPerformed(evt);
             }
         });
 
@@ -64,7 +64,7 @@ public class TelaSoma extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txtN2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnSoma)
+                .addComponent(lblSoma)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -76,7 +76,7 @@ public class TelaSoma extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtN1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtN2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSoma)
+                    .addComponent(lblSoma)
                     .addComponent(jLabel1)
                     .addComponent(lblResultado))
                 .addContainerGap(45, Short.MAX_VALUE))
@@ -89,12 +89,16 @@ public class TelaSoma extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtN2ActionPerformed
 
-    private void btnSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaActionPerformed
+    private void lblSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblSomaActionPerformed
      int n1 = Integer.parseInt(txtN1.getNext());
+     int n2 = Integer.parseInt(txtN2.getNext());
+     int S = n1 + n2;
+     lblSoma.setText(integer.toString(S));
      
-     int n2;
+     
+  
     // TODO add your handling code here:
-    }//GEN-LAST:event_btnSomaActionPerformed
+    }//GEN-LAST:event_lblSomaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -132,9 +136,9 @@ public class TelaSoma extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSoma;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblResultado;
+    private javax.swing.JButton lblSoma;
     private javax.swing.JTextField txtN1;
     private javax.swing.JTextField txtN2;
     // End of variables declaration//GEN-END:variables
