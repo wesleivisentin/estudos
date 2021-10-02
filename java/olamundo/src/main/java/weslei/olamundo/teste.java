@@ -1,5 +1,8 @@
 
 package weslei.olamundo;
+
+import java.io.PrintStream;
+
 public class teste {
     public static void main(String[] args) {
         System.out.println("olá, mundo");
@@ -14,11 +17,9 @@ public class teste {
      
         System.out.println(casado);
         
-        
+   String nome = "Weslei";     
    float nota = 8.5f;
-      System.out.println("sua nota é: "+nota);   
-   System.out.print("sua tona é: "+ nota);
-        System.out.println("sua nota é: "+nota);        
+       System.out.format("A nota de %s é %.2f \n",nome, nota);     
                 
      
      
