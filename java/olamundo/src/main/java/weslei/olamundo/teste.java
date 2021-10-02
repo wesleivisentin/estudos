@@ -19,8 +19,10 @@ public class teste {
         System.out.println(casado);
         
         
-   Scanner teclado = new Scanner(System.in);     
-   String nome = teclado.nextLine();     
+   Scanner teclado = new Scanner(System.in);   
+   System.out.print("escreva o nome do aluno: ");
+   String nome = teclado.nextLine();
+   System.out.print("escreva a nota: ");
    float nota = teclado.nextFloat();
        System.out.format("A nota de %s é %.2f \n",nome, nota);     
                 
