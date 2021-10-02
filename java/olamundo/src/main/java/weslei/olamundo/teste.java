@@ -13,6 +13,13 @@ public class teste {
      boolean casado = (boolean) false;
      
         System.out.println(casado);
+        
+        
+   float nota = 8.5f;
+      System.out.println("sua nota é: "+nota);   
+   System.out.print("sua tona é: "+ nota);
+        System.out.println("sua nota é: "+nota);        
+                
      
      
      
