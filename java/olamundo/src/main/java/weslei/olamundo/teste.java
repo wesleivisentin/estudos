@@ -24,7 +24,12 @@ public class teste {
    String nome = teclado.nextLine();
    System.out.print("escreva a nota: ");
    float nota = teclado.nextFloat();
-       System.out.format("A nota de %s é %.2f \n",nome, nota);     
+   System.out.format("A nota de %s é %.2f \n",nome, nota); 
+       
+   
+   
+   
+   
                 
      
      
