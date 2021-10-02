@@ -2,6 +2,7 @@
 package weslei.olamundo;
 
 import java.io.PrintStream;
+import java.util.Scanner;
 
 public class teste {
     public static void main(String[] args) {
@@ -17,8 +18,10 @@ public class teste {
      
         System.out.println(casado);
         
-   String nome = "Weslei";     
-   float nota = 8.5f;
+        
+   Scanner teclado = new Scanner(System.in);     
+   String nome = teclado.nextLine();     
+   float nota = teclado.nextFloat();
        System.out.format("A nota de %s é %.2f \n",nome, nota);     
                 
      
