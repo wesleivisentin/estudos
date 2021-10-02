@@ -6,7 +6,19 @@ public class teste {
      
      Integer idade = new Integer(3);
      
-        float[] sal = new float(1825.54);
+     
+     
+  Character letra = new Character('G');
+     
+     boolean casado = (boolean) false;
+     
+        System.out.println(casado);
+     
+     
+     
+     
+     
+        
      
         
     }
