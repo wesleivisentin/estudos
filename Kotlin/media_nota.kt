@@ -1,8 +1,9 @@
 fun main() {
-val grade = (0..10).random()    
+val grade = (0..10).random()
+println(grade.getStudentStatus())    
 }
 
-fun int.getStudentStats():String{
+fun Int.getStudentStats():String{
     println("nota $this")
 
     return when(this){
