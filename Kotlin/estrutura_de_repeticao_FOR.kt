@@ -9,3 +9,15 @@ fun downTo() {
         print("$i")
     }
 }
+
+fun until(){
+    for(i in 1 until 20){
+        print("$i ")
+    }
+}
+
+for step(num:Int) {
+    for(i in 0.. 20 step num){
+        print("$i ")
+    }
+}
