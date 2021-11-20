@@ -16,13 +16,13 @@ fun until(){
     }
 }
 
-for step(num:Int) {
+fun step(num:Int) {
     for(i in 0.. 20 step num){
         print("$i ")
     }
 }
 
-for letters(){
+fun letters(){
     val sArray = "olha essa string!"
     for(l in sArray){
         println(l.toUpperCase())
