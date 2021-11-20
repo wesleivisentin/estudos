@@ -21,3 +21,10 @@ for step(num:Int) {
         print("$i ")
     }
 }
+
+for letters(){
+    val sArray = "olha essa string!"
+    for(l in sArray){
+        println(l.toUpperCase())
+    }
+}
