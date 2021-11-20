@@ -3,7 +3,7 @@ val grade = (0..10).random()
 println(grade.getStudentStatus())    
 }
 
-fun Int.getStudentStats():String{
+fun Int.getStudentStatus():String{
     println("nota $this")
 
     return when(this){
