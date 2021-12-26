@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da liga dos astronautas</title>
+</head>
+<body>
+    <h3>Cadastro da liga dos astronautas</h3>
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+    <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="password">- password</label>
+        <input type="password" name="password" id="password">
+    <br><br>
+        <label for="data">Data de nascimento:</label>   
+        <input type="date" name="data" id="data"> 
+        <label for="foto">- Foto:</label>
+        <input type="file" name="foto" id="foto">
+    <br><br>
+        <label for="nac">nacionalidade:</label>    
+        <input list="naci" name="nac" id="nac">
+            <datalist id="naci">
+            <option value="Russo"></option>
+            <option value="Americano"></option>
+            <option value="Brasileiro"></option>
+            </datalist>
+        <label for="gen">- Genero:</label>
+        <label for="f">F</label>
+        <input type="radio" name="gen" id="f">   
+        <label for="m">M</label>
+        <input type="radio" name="gen" id="m">
+        <br>
+        <p>Suas principais qualidade:</p>
+        <label for="qual1">Inteligencia</label>
+        <input type="checkbox" name="qual1" id="qual1">
+        <label for="qual2">| Resiliencia</label>
+        <input type="checkbox" name="qual2" id="qual2">
+        <label for="qual3">| Preparo físico</label>
+        <input type="checkbox" name="qual3" id="qual3">
+    </form>
+</body>
+</html>
