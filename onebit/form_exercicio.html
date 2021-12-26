@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro da liga dos astronautas</title>
 </head>
@@ -30,19 +30,21 @@
     <br>
     <div>
         <label for="nac">nacionalidade:</label>    
-        <input list="naci" name="nac" id="nac">
-            <datalist id="naci">
-            <option value="Russo"></option>
-            <option value="Americano"></option>
-            <option value="Brasileiro"></option>
-            </datalist>
-        <label for="gen">- Genero:</label>
+        <select name="nac" id="nac">
+            <option value="Russo">russo</option>
+            <option value="Americano">americano</option>
+            <option value="Brasileiro">brasileiro</option>
+        </select> - 
+      Genero:
         <label for="f">F</label>
         <input type="radio" name="gen" id="f">   
         <label for="m">M</label>
         <input type="radio" name="gen" id="m">
+    </div>        
         <br>
-        <p>Suas principais qualidade:</p>
+    <div>
+        Suas principais qualidade:
+        <br>
         <label for="qual1">Inteligencia</label>
         <input type="checkbox" name="qual1" id="qual1">
         <label for="qual2">| Resiliencia</label>
@@ -54,7 +56,7 @@
     </div>    
     <br>
     <div>
-        <textarea name="texto" id="texto" cols="32" rows="10">porque você gostaria de ser um astronaura?</textarea>
+        <textarea name="texto" id="texto" cols="32" rows="10" placeholder="porque você gostaria de ser um astronaura?"></textarea>
     </div>    
     <br>
     <div>
