@@ -4,4 +4,14 @@ body{
 
 .back{
     background-color: #fffafa;
+    margin: -12px 100px 50px 100px;
+    
+}
+
+.fontcolor{
+    color: blue;
+}
+
+.padding{
+    padding: 30px;
 }
