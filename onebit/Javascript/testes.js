@@ -21,3 +21,8 @@ console.log(squad)
 squad = "Espacial" //gera erro
 console.log(squad)
 
+//var
+var velocity = 80
+console.log(velocity)
+velocity = 25
+console.log(velocity)
