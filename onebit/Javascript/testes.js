@@ -26,3 +26,8 @@ var velocity = 80
 console.log(velocity)
 velocity = 25
 console.log(velocity)
+
+
+//prompt
+let pilot = prompt("qual o seu nome piloto?")
+console.log(pilot)  //pilot recebe o valor digitado 
