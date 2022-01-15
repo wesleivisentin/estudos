@@ -36,8 +36,8 @@ console.log(pilot)  //pilot recebe o valor digitado
 
 alert("bem-vindo! a seguir pediremos que informe alguns dados.")
 
-let name = prompt("qual seu nome?")
-console.log(name)
+let nome = prompt("qual seu nome?")
+console.log(nome)
 let idade = prompt("qual a sua idade?")
 console.log(idade)
 
@@ -45,4 +45,4 @@ console.log(idade)
 let confirma = confirm("tem certeza que tem " + idade + " anos?")
 console.log(confirma)
 
-alert("seu nome é "+ name + ", você tem " + idade + " anos. confirmação de idade: " + confirma)
+alert("seu nome é "+ nome + "\n você tem " + idade + " anos.\n confirmação de idade: " + confirma)
