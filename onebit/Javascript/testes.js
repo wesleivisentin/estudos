@@ -46,3 +46,6 @@ let confirma = confirm("tem certeza que tem " + idade + " anos?")
 console.log(confirma)
 
 alert("seu nome é "+ nome + "\n você tem " + idade + " anos.\n confirmação de idade: " + confirma)
+
+/* ______________________ *\
+
