@@ -31,3 +31,18 @@ console.log(velocity)
 //prompt
 let pilot = prompt("qual o seu nome piloto?")
 console.log(pilot)  //pilot recebe o valor digitado 
+
+//exercicio pedir dados e mostrar:
+
+alert("bem-vindo! a seguir pediremos que informe alguns dados.")
+
+let name = prompt("qual seu nome?")
+console.log(name)
+let idade = prompt("qual a sua idade?")
+console.log(idade)
+
+
+let confirma = confirm("tem certeza que tem " + idade + " anos?")
+console.log(confirma)
+
+alert("seu nome é "+ name + ", você tem " + idade + " anos. confirmação de idade: " + confirma)
