@@ -47,5 +47,23 @@ console.log(confirma)
 
 alert("seu nome é "+ nome + "\n você tem " + idade + " anos.\n confirmação de idade: " + confirma)
 
-/* ______________________ *\
+
+let uuuuuuuuu = "elemental"
+let velocityy = 20
+
+console.log(uuuuuuuuu.lenght == 9 && velocityy > 15)
+
+
+// if e else
+let velocity = 205
+if(velocity < 100) {
+  console.log("estamos muito devagar")
+}
+else{
+  if(velocity > 100 & velocity < 200) {
+  console.log("estamos em um velocidade aceitavel")
+}else{
+  console.log("aaaaa")
+}
+}
 

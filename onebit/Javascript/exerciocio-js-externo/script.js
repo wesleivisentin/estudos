@@ -8,3 +8,4 @@ let difference = (oldAge - newAge)
 
 alert(oldName + " de " + oldAge + " anos, é a pessoa mais velha. \n" + newName + " de " + newAge + " anos, é a pessoa mais nova. \n"
 + "elas tem " + difference + " anos de diferença.")
+
