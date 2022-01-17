@@ -67,3 +67,15 @@ else{
 }
 }
 
+
+// else if
+let velocity = 40
+if(velocity < 100) {
+  console.log("estamos muito devagar")
+}
+else if(velocity > 100 & velocity < 200) { // melhor assim
+  console.log("estamos em um velocidade aceitavel")
+}else{
+  console.log("aaaaa")
+}
+
