@@ -79,3 +79,6 @@ else if(velocity > 100 & velocity < 200) { // melhor assim
   console.log("aaaaa")
 }
 
+//if de uma linha...operador ternario (só para expressoes e blocos pequenos)
+(velocity > 100) ? console.log("velocidade maior que 100") : console.log("velocidade menor que 100")
+
