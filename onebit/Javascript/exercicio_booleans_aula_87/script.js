@@ -13,15 +13,15 @@ if (chosenOption == "1"){
     alert("Tempo de vôo: " + secondsofDeparture + " Segundos.")
 }
 else if (chosenOption == "2"){
-    let minutesOfDeparture = Math.round(dateDiff / 0)
+    let minutesOfDeparture = Math.round(dateDiff /1000 / 60)
     alert("Tempo de vôo: " + minutesOfDeparture + " Minutos.")
 }
 else if (chosenOption == "3") {
-    let hoursofDeparture = Math.round(dateDiff / 0)
-    alert("Tempo de vôo: " + hoursofDeparture + " Horas.")
+    let hoursOfDeparture = Math.round(dateDiff / 1000 / 3600)
+    alert("Tempo de vôo: " + hoursOfDeparture + " Horas.")
 }
 else if (chosenOption == "4") {
-    let daysOfDeparture = Math.round(dateDiff / 0)
+    let daysOfDeparture = Math.round(dateDiff / 1000 / 3600 / 24)
     alert(" Tempo de vôo: " + daysOfDeparture + " Dias.")
 }
 else {
