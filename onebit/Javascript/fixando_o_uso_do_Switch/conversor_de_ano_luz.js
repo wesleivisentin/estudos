@@ -13,14 +13,14 @@ switch(conversion){
         break
     
     case "2":
-        let distConver = (distancy * 63241,1)
-        alert("Distancia em anos-luz:" + distancy + "\nUnidade Astronômica: " + distConver + " AU")
+        let distConverr = (distancy * 63241,1)
+        alert("Distancia em anos-luz:" + distancy + "\nUnidade Astronômica: " + distConverr + " AU")
         break
 
     case "3":
         
-        let distConver = (distancy * Math.pow(10, 12))
-        alert("Distancia em anos-luz:" + distancy + "\nQuilômetros: " + distConver + " Km")
+        let distConverrr = (distancy * Math.pow(10, 12))
+        alert("Distancia em anos-luz:" + distancy + "\nQuilômetros: " + distConverrr + " Km")
         break
     default:
         alert("Distancia em anos-luz: " + distancy + "\nUnidade não identificada:Conversão fora do escopo")    
