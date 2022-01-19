@@ -12,22 +12,24 @@ let convertedDistance
 switch(conversion){
     case "1":
         chosenunity = "Parsec"
-        convertedDistance = (distancy * 0,306601)
-        alert("Distancia em anos-luz:" + distancy + "\nParsec: " + distConver + " pc")
+        convertedDistance = (distancy * 0.306601)
         break
     
     case "2":
         hosenunity = "Unidade Astronômica"
-        convertedDistance = (distancy * 63241,1)
-        alert("Distancia em anos-luz:" + distancy + "\nUnidade Astronômica: " + distConverr + " AU")
+        convertedDistance = (distancy * 63241.1)
         break
 
     case "3":
         
-        let distConverrr = (distancy * Math.pow(10, 12))
-        alert("Distancia em anos-luz:" + distancy + "\nQuilômetros: " + distConverrr + " Km")
+        hosenunity = "Quilometros"
+        convertedDistance = (distancy * 9.5 * Math.pow(10, 12))
         break
     default:
-        alert("Distancia em anos-luz: " + distancy + "\nUnidade não identificada:Conversão fora do escopo")    
+        chosenunity = "Unidade não identificada"
+        convertedDistance = "conversão fora do escopo"
+            
 
 }
+
+alert("Distancia em anos-luz:" + distancy + "\n" + chosenunity + ": " + convertedDistance)
