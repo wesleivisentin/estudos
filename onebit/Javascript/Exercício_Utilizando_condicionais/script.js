@@ -16,22 +16,38 @@ if (confirmation) {
 alert ("subindo velocidade para " + velocityStart + " km/s")
 
 //diferentes tipos de velocidades
-
+/*
 if (velocityStart <= 0){
     alert("nave está parada. Considere partir e aumentar a velocidade")
 }
 else if (velocityStart > 0 & velocityStart < 40){
-        alert("Voce está devagar, podemos aumentar mais")
-    }
-    else if (velocityStart >= 40 & velocityStart < 80) {
-        alert("parece uma boa velocidade para manter")
-    }
-        else if (velocityStart >= 80 & velocityStart < 100) {
-            alert("Velocidade muito alta, considere diminuir. ")
-        }
-        else  {
-            alert ("velocidade perigosa.Controle automático forçado.")
-        }
+    alert("Voce está devagar, podemos aumentar mais")
+}
+else if (velocityStart >= 40 & velocityStart < 80) {
+    alert("parece uma boa velocidade para manter")
+}
+else if (velocityStart >= 80 & velocityStart < 100) {
+    alert("Velocidade muito alta, considere diminuir. ")
+}
+ else  {
+    alert ("velocidade perigosa.Controle automático forçado.")
+}
+*/
+if (velocityStart <= 0){
+    alert("nave está parada. Considere partir e aumentar a velocidade")
+}
+else if (velocityStart < 40){
+    alert("Voce está devagar, podemos aumentar mais")
+}
+else if (velocityStart < 80) {
+    alert("parece uma boa velocidade para manter")
+}
+else if (velocityStart < 100) {
+    alert("Velocidade muito alta, considere diminuir. ")
+}
+ else  {
+    alert ("velocidade perigosa.Controle automático forçado.")
+}
 
 
-        alert(namePilot + " sua velocidade atual é de: "+ velocityStart + " km/s.")
+alert(namePilot + " sua velocidade atual é de: "+ velocityStart + " km/s.")
