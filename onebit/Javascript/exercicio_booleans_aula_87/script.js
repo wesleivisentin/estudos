@@ -3,4 +3,10 @@ let departureDate = moment(departureDateEntry, "DD/MM/YYYY")
 
 let today = moment()
 
-let datediff = today - departureDate
+let dateDiff = today - departureDate
+
+let chosenOption = prompt("Escolha como gostaria de exibir o tempo de partida \n1- Segundos\n2- Minutos\n3- Horas\n4- Dias")
+
+if (chosenOption == 1){
+    let secondsofDeparture = Math.round(dateDiff / 1000)
+}
