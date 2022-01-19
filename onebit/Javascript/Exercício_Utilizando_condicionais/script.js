@@ -13,4 +13,4 @@ if (confirmation) {
 }
    
 
-alert ("é" + velocityStart)
+alert ("é " + velocityStart)
