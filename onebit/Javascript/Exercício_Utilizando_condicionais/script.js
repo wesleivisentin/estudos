@@ -27,5 +27,8 @@ else if (velocityStart > 0 & velocityStart < 40){
         alert("parece uma boa velocidade para manter")
     }
         else if (velocityStart >= 80 & velocityStart < 100) {
-            alert
+            alert("Velocidade muito alta, considere diminuir. ")
+        }
+        else  {
+            alert ("velocidade perigosa.Controle automático forçado.")
         }
