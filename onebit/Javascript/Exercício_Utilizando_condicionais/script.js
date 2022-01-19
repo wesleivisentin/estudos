@@ -33,4 +33,5 @@ else if (velocityStart > 0 & velocityStart < 40){
             alert ("velocidade perigosa.Controle automático forçado.")
         }
 
-alert(namePilot + " sua velocidade atual é de: "+ velocityStart + " km/s.")
+
+        alert(namePilot + " sua velocidade atual é de: "+ velocityStart + " km/s.")
