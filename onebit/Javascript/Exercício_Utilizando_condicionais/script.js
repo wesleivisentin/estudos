@@ -6,6 +6,11 @@ let velocityOption = prompt ("a qual velocidade gostaria de acelerar?")
 
 let confirmation = confirm("tem certeza que quer andar a " + velocityOption + " ?")
 
-if (confirm = true) {
+
+if (confirmation) {
     velocityStart = velocityOption
+  
 }
+   
+
+alert ("é" + velocityStart)
