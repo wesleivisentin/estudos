@@ -18,7 +18,7 @@ alert ("subindo velocidade para " + velocityStart + " km/s")
 //diferentes tipos de velocidades
 
 if (velocityStart <= 0){
-    alert("nave está parada. Considere partir e aumnetar a velocidade")
+    alert("nave está parada. Considere partir e aumentar a velocidade")
 }
 else if (velocityStart > 0 & velocityStart < 40){
         alert("Voce está devagar, podemos aumentar mais")
@@ -33,4 +33,4 @@ else if (velocityStart > 0 & velocityStart < 40){
             alert ("velocidade perigosa.Controle automático forçado.")
         }
 
-alert(namePilot+ " sua velocidade atual é de: "+ velocityStart + " km/s.")
+alert(namePilot + " sua velocidade atual é de: "+ velocityStart + " km/s.")
