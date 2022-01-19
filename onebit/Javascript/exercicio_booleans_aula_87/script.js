@@ -9,4 +9,15 @@ let chosenOption = prompt("Escolha como gostaria de exibir o tempo de partida \n
 
 if (chosenOption == 1){
     let secondsofDeparture = Math.round(dateDiff / 1000)
+    //Math.round(arredonda numero)...
+    alert("Tempo de vôo: " + secondsofDeparture + " Segundos.")
 }
+else if (chosenOption == 2){
+    let minutesOfDeparture = Math.round(dateDiff / 0)
+    alert("Tempo de vôo: " + minutesOfDeparture + " Minutos.")
+}
+else if (chosenOption == 3) {
+    let hoursofDeparture = Math.round(dateDiff / 0)
+    alert("Tempo de vôo: " + hoursofDeparture + " Horas.")
+}
+else
