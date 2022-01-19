@@ -6,14 +6,19 @@ let conversion = prompt("para conversão temos as seguintes opções:\n[1]-  Par
 1 l.y. = 63241,1 AU
 1 l.y. = 9,5 * 10^12 km
 */
+let chosenunity
+let convertedDistance
+
 switch(conversion){
     case "1":
-        let distConver = (distancy * 0,306601)
+        chosenunity = "Parsec"
+        convertedDistance = (distancy * 0,306601)
         alert("Distancia em anos-luz:" + distancy + "\nParsec: " + distConver + " pc")
         break
     
     case "2":
-        let distConverr = (distancy * 63241,1)
+        hosenunity = "Unidade Astronômica"
+        convertedDistance = (distancy * 63241,1)
         alert("Distancia em anos-luz:" + distancy + "\nUnidade Astronômica: " + distConverr + " AU")
         break
 
