@@ -20,8 +20,12 @@ alert ("subindo velocidade para " + velocityStart + " km/s")
 if (velocityStart <= 0){
     alert("nave está parada. Considere partir e aumnetar a velocidade")
 }
-else {
-    if (velocityStart < 40){
+else if (velocityStart > 0 & velocityStart < 40){
         alert("Voce es´ta devagar, podemos aumentar mais")
     }
-}
+    else if (velocityStart >= 40 & velocityStart < 80) {
+        alert("parece uma boa velocidade para manter")
+    }
+        else if (velocityStart >= 80 & velocityStart < 100) {
+            alert
+        }
