@@ -16,14 +16,14 @@ switch(conversion){
         break
     
     case "2":
-        hosenunity = "Unidade Astronômica"
+        chosenunity = "Unidade Astronômica"
         convertedDistance = (distancy * 63241.1)
         break
 
     case "3":
         
-        hosenunity = "Quilometros"
-        convertedDistance = (distancy * 9.5 * Math.pow(10, 12))
+        chosenunity = "Quilometros"
+        convertedDistance = distancy * 9.5 * Math.pow(10, 12)
         break
     default:
         chosenunity = "Unidade não identificada"
@@ -32,4 +32,4 @@ switch(conversion){
 
 }
 
-alert("Distancia em anos-luz:" + distancy + "\n" + chosenunity + ": " + convertedDistance)
+alert("Distancia em anos-luz: " + distancy + "\n" + chosenunity + ": " + convertedDistance)
