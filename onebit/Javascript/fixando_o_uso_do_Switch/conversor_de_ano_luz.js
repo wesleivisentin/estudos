@@ -7,17 +7,20 @@ let conversion = prompt("para conversão temos as seguintes opções:\n[1]-  Par
 1 l.y. = 9,5 * 10^12 km
 */
 switch(conversion){
-    case 1:
+    case "1":
         let distConver = (distancy * 0,306601)
-        alert("Distancia em anos-luz:")
+        alert("Distancia em anos-luz:" + distancy + "\nParsec: " + distConver + " pc")
         break
     
-    case 2:
-        distancy * 63241,1
+    case "2":
+        let distConver = (distancy * 63241,1)
+        alert("Distancia em anos-luz:" + distancy + "\nUnidade Astronômica: " + distConver + " AU")
         break
 
-    case 3:
-        distancy * Math.pow(10, 12)
+    case "3":
+        
+        let distConver = (distancy * Math.pow(10, 12))
+        alert("Distancia em anos-luz:" + distancy + "\nQuilômetros: " + distConver + " Km")
         break
     default:
         alert("Distancia em anos-luz: " + distancy + "\nUnidade não identificada:Conversão fora do escopo")    
