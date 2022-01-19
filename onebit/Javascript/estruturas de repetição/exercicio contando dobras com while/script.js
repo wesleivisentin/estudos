@@ -1,4 +1,7 @@
 /* exercicio que eu fiz
+
+
+
 let nameNave = prompt("qual o nome da sua nave?")
 let confirmDouble
 let enterDouble = confirm("Deseja entrar em dobra espacial?" )
