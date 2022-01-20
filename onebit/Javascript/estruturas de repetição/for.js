@@ -10,3 +10,15 @@ for(let i = 0; i < spaceship.length; i++) {
     }
 }
 console.log(newSpaceship)
+
+
+
+//usando o BREAK
+
+let spaceshipName = "Supernova"
+for(let i = 0 ; i < spaceshipName.length; i++){
+    if(spaceshipName[i] == "o"){
+    break    
+    }
+    console.log(spaceshipName[i])
+}
