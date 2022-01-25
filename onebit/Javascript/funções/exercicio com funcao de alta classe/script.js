@@ -30,3 +30,59 @@ function desacelerar(velocity,callback){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+let patrimonio = 2500
+
+function meuPatrimonio(dinheiroConta, callback){
+    let desvaloriza = 100
+    while(dinheiroConta >= 0){
+        callback(dinheiroConta)
+        dinheiroConta -= desvaloriza
+    }
+    console.log("você Faliu!!!")
+}
+
+meuPatrimonio(patrimonio, function(dinheiroConta){
+    console.log("você agora tem " + dinheiroConta + " reais.")
+})
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
