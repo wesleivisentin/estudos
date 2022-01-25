@@ -1,3 +1,5 @@
+
+//>>>>>>>>>>>>>>>>>>>>>  SPLICE  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 let spaceshipNames = ["Elemental", "Darwin", "Àrtemis", "Supernova"]
 
 let removedSpaceships = spaceshipNames.splice(1, 2, "Deméter", "Puller", "Golias")
@@ -5,3 +7,13 @@ let removedSpaceships = spaceshipNames.splice(1, 2, "Deméter", "Puller", "Golia
 
 console.log(spaceshipNames)
 console.log(removedSpaceships)
+
+
+//>>>>>>>>>>>>>>>>>>>>>  SLICE  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+let spaceshipNames2 = ["Elemental", "Darwin", "Àrtemis", "Supernova"]
+
+let extractedNames = spaceshipNames2.slice(0, 2)
+
+console.log(spaceshipNames2)
+console.log(extractedNames)
