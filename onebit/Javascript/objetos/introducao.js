@@ -4,6 +4,11 @@ let spaceship = { //criando o objeto e as suas propriedades
     type: "Batalha"
 }
 
+let newObject = {}  //objeto pode ser criado vazio tambem
+//ou
+let newObject2 = new Object()
+
+
 console.log(spaceship) //chama todas as propriedades do objeto
 
 console.log(spaceship.name) //chama so a propriedade do objeto
