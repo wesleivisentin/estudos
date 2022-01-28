@@ -5,3 +5,10 @@ let spacialStation = {
 }
 
 console.log(spacialStation.name.toUpperCase())
+
+
+//usando string:
+
+let spaceshipNames = ["Fenix", "Puller", "Golias"]
+
+console.log(spaceshipNames[0].toUpperCase())
