@@ -28,3 +28,21 @@ console.log(spaceships[0].name)
 spaceships.forEach(element => {
     console.log(element.name + " tem " + element.crewQuantity + " tripulantes.")
 });
+
+
+//----------------------------------------------------------
+//----------------------------------------------------------
+//objeto dentro de objeto:
+
+let spaceshipp = {
+    name: "Golias",
+    maxCrew: 20,
+    captain: {
+        name: "Hugo Trent",
+        age: 37
+    }
+}
+
+//executar o nome do capitão(obj dentro do obj)
+
+console.log(spaceshipp.captain.name)
