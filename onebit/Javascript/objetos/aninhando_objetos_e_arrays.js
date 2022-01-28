@@ -22,3 +22,9 @@ let spaceships = [
 //pegar nome da nave do primeiro objeto
 
 console.log(spaceships[0].name)
+
+// imprimir nave por nave nome e tripulantes
+
+spaceships.forEach(element => {
+    console.log(element.name + " tem " + element.crewQuantity + " tripulantes.")
+});
