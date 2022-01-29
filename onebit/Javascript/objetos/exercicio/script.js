@@ -5,6 +5,12 @@ let velocityNow = 0
 
 function newVelocity() {
     velocityNow = velocityNow += parseInt(acelerattion)
+    if(velocityNow > velocityMaxSpaceship){
+        alert("ATENÇÃO!!!\nVelocidade Máxima de " + velocityMaxSpaceship + "km/s atingida")
+        alert("Parada de emergencia ativada")
+        velocityNow = (velocityMaxSpaceship / 2)
+        alert("velocidade reduzida pela metade.")
+    }
     
 }
 
@@ -36,4 +42,7 @@ else {
     question()
 }
 }
+
+alert("nome da nave: " + nave.name + "\nTipo da nave: " + nave.type + "\nVelocidade máxima: " + nave.velocity + "km/s" + "\nÚltima velocidade registrada: " + velocityNow + "km/s")
+
 
