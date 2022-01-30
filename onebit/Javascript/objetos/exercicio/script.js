@@ -4,7 +4,7 @@ let velocityMaxSpaceship = prompt ("Qual e velocidade Maxima da sua nave?")
 let velocityNow = 0
 
 function newVelocity() {
-    velocityNow = velocityNow += parseInt(acelerattion)
+    velocityNow = velocityNow += number(acelerattion)
     if(velocityNow > velocityMaxSpaceship){
         alert("ATENÇÃO!!!\nVelocidade Máxima de " + velocityMaxSpaceship + "km/s atingida")
         alert("Parada de emergencia ativada")
@@ -13,7 +13,7 @@ function newVelocity() {
     }
     
 }
-
+ 
 let nave = {
     name: nameSpaceship,
     type: typeSpaceship,
