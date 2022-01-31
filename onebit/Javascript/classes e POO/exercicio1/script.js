@@ -23,7 +23,7 @@ questions()
 while(question == 1 || 2 || 3) {
     if(question == 1){
         this.nome = prompt("CADASTRO DE NAVE\nQual o nome da nave?")
-        this.tripulantes = prompt("qual o numero de tripulantes?")
+        this.tripulantes = prompt("qual o número de tripulantes?")
         questions()
     }
     else if(question == 2){
