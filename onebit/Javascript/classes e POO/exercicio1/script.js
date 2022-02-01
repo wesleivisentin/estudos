@@ -17,7 +17,7 @@ class Station {
 }
 let question = 0
 function questions(){
-question = prompt("O que você deseja fazer?" + "\n[1] - Para realizar engate" + "\n[2] - Para imprimir naves" + "\n[3] - Sair do programa")
+question = prompt("O que você deseja fazer?" + "\n[1] - Para realizar engate" + "\n[2] - Para imprimir naves" + "\n[3] - Sair do programa!")
 }
 questions()
 while(question == 1 || 2 || 3) {
