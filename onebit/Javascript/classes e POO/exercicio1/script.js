@@ -31,7 +31,7 @@ while(question == 1 || 2 || 3) {
         questions()
     }
     else if(question == 2){
-        alert("Lista de naves:" + listaDeNaves)
+        alert("Lista de naves:" + novaNave)
         questions()
     }
     else if(question == 3){
