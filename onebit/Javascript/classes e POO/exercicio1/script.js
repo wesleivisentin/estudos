@@ -5,13 +5,14 @@ engatada(s/n) ,
 portas abertas ou nao
 
 */
-
+let novaNave
+let listaDeNaves =[]
 class Station {
-    constructor(name, quantity){
+    constructor(name, quantity,engate = "sim", portas = "abertas" ){
         this.nome = name
-        thistripulantes = quantity
-        engate = "sim"
-        portas = "abertas"
+        this.tripulantes = quantity
+        this.engate = engate
+        this.portas = portas
 
     }
 }
@@ -22,12 +23,15 @@ question = prompt("O que você deseja fazer?" + "\n[1] - Para realizar engate" +
 questions()
 while(question == 1 || 2 || 3) {
     if(question == 1){
-        this.nome = prompt("CADASTRO DE NAVE\nQual o nome da nave?")
-        this.tripulantes = prompt("qual o número de tripulantes?")
+        let nome1 = prompt("CADASTRO DE NAVE\nQual o nome da nave?")
+        let tripulantes1 = prompt("qual o número de tripulantes?")
+       
+        novaNave = new Station(nome1, tripulantes1)
+        listaDeNaves.push([novaNave])
         questions()
     }
     else if(question == 2){
-        alert("Lista de naves:")
+        alert("Lista de naves:" + listaDeNaves)
         questions()
     }
     else if(question == 3){
@@ -39,3 +43,5 @@ while(question == 1 || 2 || 3) {
         questions()
     }
 }
+
+console.log(listaDeNaves)
