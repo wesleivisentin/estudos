@@ -8,8 +8,8 @@ portas abertas ou nao
 
 class Station {
     constructor(name, quantity){
-        nome = name
-        tripulantes = quantity
+        this.nome = name
+        thistripulantes = quantity
         engate = "sim"
         portas = "abertas"
 
