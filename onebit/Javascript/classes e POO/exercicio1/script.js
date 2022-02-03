@@ -16,6 +16,14 @@ class Station {
 
     }
 }
+function printNaves(callback) {
+    let spaceshipList = ""
+    callback.forEach((spaceship, index) => {
+        spaceshipList += (index + 1) + "- " + spaceship.nome + " (" + spaceship.tripulantes + " Tripulantes)\n"
+    })
+    alert(spaceshipList)
+}
+
 let question = 0
 function questions(){
 question = prompt("O que você deseja fazer?" + "\n[1] - Para realizar engate" + "\n[2] - Para imprimir naves" + "\n[3] - Sair do programa!")
@@ -27,11 +35,11 @@ while(question == 1 || 2 || 3) {
         let tripulantes1 = prompt("qual o número de tripulantes?")
        
         novaNave = new Station(nome1, tripulantes1)
-        listaDeNaves.push([novaNave])
+        listaDeNaves.push(novaNave)
         questions()
     }
     else if(question == 2){
-        alert("Lista de naves:" + novaNave)
+        printNaves(listaDeNaves)
         questions()
     }
     else if(question == 3){
