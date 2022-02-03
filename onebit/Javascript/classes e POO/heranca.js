@@ -38,3 +38,6 @@ console.log(fenix)
 
 darwin.speedUp(210)
 fenix.speedUp(230)
+
+darwin.stop()
+fenix.stop()
