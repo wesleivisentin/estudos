@@ -26,7 +26,7 @@ class TransportSpaceship extends Spaceship{
     }
 }
 
-let transportSpaceship = new transportSpaceship("transportadora", 4, 100, 400)
+let transportSpaceship = new TransportSpaceship("transportadora", 4, 100, 400)
 
 console.log(transportSpaceship)
 transportSpaceship.speedUp(210)
