@@ -19,4 +19,11 @@ class TransportSpaceship extends Spaceship{
     super(name, maxCrew, masRecommendedValue) // chama o constructor do Spaceship
     this.maxLoadWeight = maxLoadWeight
     }
+    speedUp(acceleration){
+        acceleration /= 2
+        alert("incrementando velocidade em " + acceleration + "Km/s")
+        super.speedUp(acceleration)
+    }
 }
+
+let transportSpaceship
