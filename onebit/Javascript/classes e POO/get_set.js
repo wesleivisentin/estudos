@@ -29,10 +29,14 @@ class ResourceProcessStation {
         TouchList.monthlyProcessedLoad = monthlyProcessedLoad
     }
 
-    get weklyrPocessedload() {
+    get weeklyrPocessedload() {
         return this.monthlyProcessedLoad / 4
     }
 }
 let resourceProcessor = new ResourceProcessStation("Gaia", 500)
 
-console.log(resourceProcessor.weklyrPocessedload)
+console.log(resourceProcessor.weeklyrPocessedload)
+
+resourceProcessor.monthlyProcessedLoad = 600
+
+console.log(resourceProcessor.weeklyrPocessedload)
