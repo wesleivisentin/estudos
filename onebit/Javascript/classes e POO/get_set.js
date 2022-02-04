@@ -18,3 +18,21 @@ let spaceship = new TransportSpaceship("transportador")
 spaceship.velocity = 130
 
 console.log(spaceship)
+
+
+
+//   get
+
+class ResourceProcessStation {
+    constructor(name, monthlyProcessedLoad){
+        this.name = name
+        TouchList.monthlyProcessedLoad = monthlyProcessedLoad
+    }
+
+    get weklyrPocessedload() {
+        return this.monthlyProcessedLoad / 4
+    }
+}
+let resourceProcessor = new ResourceProcessStation("Gaia", 500)
+
+console.log(resourceProcessor.weklyrPocessedload)
