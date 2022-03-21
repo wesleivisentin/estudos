@@ -5,8 +5,27 @@ pra isso vamos precisar trabralhar com dois elementos
 1 - listagem
 2 - cartão pokémon
 
+precisamos criar duas variáveis no JS pra trabalhar com os elemetos na tela
+
+Vamos precisar trabalhar com evento de clique feito pelo usuario na listagem de pokémons
+
+- remover a classe "aberto" só do cartao que está aberto
+- ao clicar em um pokémon da listagem pegamos o id desse pokémon pra saber qyal cartão mostrar
+- remover a classe "ativo" que marca o pokémon selecionado
+- adicionar a classe ativo no item da lista selecionado
 
 */
 
-const nome = "Weslei"
-console.log(nome)
+//precisamos criar duas variaveis no JS pra trabalhar com os elementos da tela
+const listaSelecaoPokemons = document.querySelectorAll('.pokemon')
+const pokemonsCard = document.querySelectorAll('.cartao-pokemon')
+
+
+
+//Vamos precisar trabalhar com evento de clique feito pelo usuario na listagem de pokémons
+listaSelecaoPokemons.forEach(pokemon => {
+    pokemon.addEventListener('click', () => {
+        //remover a classe "aberto" só do cartao que está aberto
+        
+    })
+})
