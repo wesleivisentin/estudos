@@ -24,8 +24,19 @@ const pokemonsCard = document.querySelectorAll('.cartao-pokemon')
 
 //Vamos precisar trabalhar com evento de clique feito pelo usuario na listagem de pokémons
 listaSelecaoPokemons.forEach(pokemon => {
+    
     pokemon.addEventListener('click', () => {
         //remover a classe "aberto" só do cartao que está aberto
-        
+        const cartaoPokemonAberto = document.querySelector('.aberto')
+        cartaoPokemonAberto.classList.remove('aberto')
+
+
+
+        //ao clicar em um pokémon da listagem pegamos o id desse pokémon pra saber qyal cartão mostrar
+        const idPokemonSelecionado = pokemon.attributes.id.value
+
+        const cartaoPokemosParaAbrir = document.getElementById('cartao-bulbasaur')
+        cartaoPokemosParaAbrir.classList.add('aberto')
+
     })
 })
