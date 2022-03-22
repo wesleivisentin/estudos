@@ -35,8 +35,17 @@ listaSelecaoPokemons.forEach(pokemon => {
         //ao clicar em um pokémon da listagem pegamos o id desse pokémon pra saber qyal cartão mostrar
         const idPokemonSelecionado = pokemon.attributes.id.value
 
-        const cartaoPokemosParaAbrir = document.getElementById('cartao-bulbasaur')
+        const idCartaoPokemonParaAbrir = 'cartao-' + idPokemonSelecionado
+        const cartaoPokemosParaAbrir = document.getElementById(idCartaoPokemonParaAbrir)
         cartaoPokemosParaAbrir.classList.add('aberto')
 
+
+        //remover a classe "ativo" que marca o pokémon selecionado
+        const pokemonAtivoNaListagem = document.querySelector('.ativo')
+        pokemonAtivoNaListagem.classList.remove('ativo')
+
+        //adicionar a classe ativo no item da lista selecionado
+        const pokemonSelecionadoNaListagem = document.getElementById(idPokemonSelecionado)
+        pokemonSelecionadoNaListagem.classList.add('ativo')
     })
 })
