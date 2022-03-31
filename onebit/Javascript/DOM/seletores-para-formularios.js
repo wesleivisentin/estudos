@@ -5,8 +5,8 @@ function showInfo() {
     let developerOptions = document.querySelectorAll("input[name='developer-options']:checked")
     let optionsValue = []
     developerOptions.forEach(element => { optionsValue.push(element.value) })
-    console.log(developerOptions)
-    let optionsChecked = developerOptions.join()
+    
+    let optionsChecked = optionsValue.join(", ")
 
     alert(   "Nome: " + name + "\nCor primária: " + favoriteColor + "\nGosta de programar? " + likeProgramming + "\nConhecimentos em programação web: " + optionsChecked)
 }
