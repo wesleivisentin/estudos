@@ -1,16 +1,19 @@
 body{
-    background-color: black;
+    background-color: rgb(119, 119, 119);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+
 .cartao{
     
+    width: 400px;
+    height: 200px;
+    margin: 20%;
     
-  
-    
-    background-image: url(assets/backgorund.png);
-    background-repeat: no-repeat;
-    background-size: 400px 200px;
-
 }
 
 h1{
@@ -18,8 +21,15 @@ h1{
     font-size: large;
 }
 .conteudo {
+    width: 400px;
+    background-image: url(assets/backgorund.png);
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
     padding: 10px;
     text-transform: uppercase;
+    display: block;
+    
+
 }
 
 #logo1 {
