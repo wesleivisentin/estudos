@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    
+<form method="get" action="">  <!--method="post" faz com que n apareça no link os dados-->
+
+    <!-------------------------------------------------------------------------------------->
+    nome:   <input type="text" name="nome" placeholder="Digite o nome">  
+    Senha: <input type="password" name="Senha" placeholder="Digite a senha">
+            <input type="submit" value="enviar Dados">
+    <br>
+    
+    <br><br><hr>
+            
+<!-------------------------------------------------------------------------------------->    
+    opções(checkbox) <br><br>
+    <input type="checkbox" name="opcoes" value="op1"> opção 1 <br>
+    <input type="checkbox" name="opcoes" value="op1"> opção 2 <br>
+    <input type="checkbox" name="opcoes" value="op1"> opção 3 <br>
+    <input type="checkbox" name="opcoes" value="op1"> opção 4 <br>
+<hr>
+<!-------------------------------------------------------------------------------------->
+radio <br>
+    <input type="radio" name="radios" value="ops1" checked> opçao 1 <br>
+    <input type="radio" name="radios" value="ops2" > opçao 2 <br>
+    <input type="radio" name="radios" value="ops3" > opçao 3 <br>
+    <input type="radio" name="radios" value="ops4" > opçao 4 <br>
+
+<hr>
+<!-------------------------------------------------------------------------------------->
+Limpar dados(reset)<br>
+<input type="reset" value="limpar">
+
+<hr>
+<!-------------------------------------------------------------------------------------->
+select <br>
+<select name="estado" size="1">
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RS">Rio Grande do sul</option>
+    <option value="ot">outro</option>
+    <option value="off" selected>...</option>
+</select>
+<br>
+<hr>
+<!-------------------------------------------------------------------------------------->
+Textarea <br>
+<textarea name="texto" id="" cols="50" rows="5" placeholder="Digite um texto..."></textarea>
+<br>
+<hr>
+
+</form> 
+
+
+</body>
+</html>
