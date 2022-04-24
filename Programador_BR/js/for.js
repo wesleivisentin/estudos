@@ -6,3 +6,12 @@
  }
 
  console.log("acabou")
+
+
+ ////////////////////////////////////////////////
+
+ var alunos = ["joao", "Weslei", "Daniela", "Uriel", "Jubileu"]
+
+ for (var i in alunos) {  // in poe o valor index de alunos dentro do i
+    console.log(alunos[i])
+ }
