@@ -19,4 +19,4 @@
 
  for (var aluno of alunos) {  // of pega os elementos da array em vez do index como o in faz
     console.log(aluno)
- }
+ }  
