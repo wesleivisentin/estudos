@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function changeH1(i) {
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.innerText = i.value
+        }
+
+        function hidden1() {
+            let h1 = document.getElementsByTagName("h1")[0]
+            h1.style.display = "none"
+        }
+
+    </script>
+    <style>
+        div{
+            display: inline-block;
+            padding: 10px;
+            font-size: 2rem;
+            background-color: rgb(233, 192, 90);
+            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Clique em mim</h1>
+
+    <input type="text" oninput="changeH1(this)">
+
+    <div onclick="hidden1()">Clique aqui</div>
+</body>
+</html>
