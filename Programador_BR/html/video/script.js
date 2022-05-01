@@ -1,6 +1,5 @@
 let video = document.getElementById("video1")
 
-
 function retroceder() {
     video.currentTime -= 15
 
@@ -31,3 +30,4 @@ function stop() {
     video.currentTime = 0
     
 }
+
