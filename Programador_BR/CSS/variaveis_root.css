@@ -2,3 +2,8 @@
     --var-color: gray;
     --square-size: 300px;
 }
+
+
+p {
+    color: var(--var-color);
+}
