@@ -1,7 +1,13 @@
 .container {
     display: flex;
+
     flex-direction: row;
     flex-wrap: wrap;
+    /* ou flex-flow: row wrap; */
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-start;
+
     background-color: darkgrey;
     height:  400px;
     color: white;
@@ -11,10 +17,14 @@
     background-color: red;
 }
 .r2 {
+    align-self: flex-end;
+    order: -1;
+    flex-grow: 1;
     background-color: blue;
 }
 
 .r3 {
+    flex-shrink: 1;
     background-color: green;
 }
 .rect{
