@@ -1,0 +1,27 @@
+.container {
+    color: white;
+    display: grid;
+    padding: 10px;
+    background-color: gray;
+
+
+    grid-template-rows:200px 200px;
+    /* grid-template-columns: 10% auto auto; */
+    grid-template-columns: 1fr 5fr 1fr;
+
+
+    grid-template: 200px 200px / 1fr 5fr 1fr;
+}
+
+
+
+.r1 {
+    background-color: rgb(248, 77, 77);
+}
+.r2 {
+    background-color: rgb(66, 169, 253);
+}
+
+.r3 {
+    background-color: rgb(9, 196, 133);
+}
