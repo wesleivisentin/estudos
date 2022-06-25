@@ -1,16 +1,29 @@
 .container {
+    height: 500px;
     color: white;
     display: grid;
     padding: 10px;
     background-color: gray;
+    
 
-
-    grid-template-rows:200px 200px;
+    /* grid-template-rows:200px 200px; */
     /* grid-template-columns: 10% auto auto; */
-    grid-template-columns: 1fr 5fr 1fr;
+    /* grid-template-columns: 1fr 5fr 1fr; */
 
 
-    grid-template: 200px 200px / 1fr 5fr 1fr;
+    grid-template: auto auto / auto auto auto;
+
+    justify-items: center;
+    align-items: center;
+
+    justify-content:  flex-end;
+    align-content: stretch;
+
+
+
+
+
+    grid-gap: 10px;
 }
 
 
@@ -24,4 +37,9 @@
 
 .r3 {
     background-color: rgb(9, 196, 133);
+}
+
+.rect{
+    width:100px;
+    height: 100px;
 }
