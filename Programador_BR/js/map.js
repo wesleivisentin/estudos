@@ -12,8 +12,18 @@ let alunos = [
 ]
 
 
-function temMenosDe30(aluno){
-    return aluno.idade < 30
+function nomeIdade(aluno) {
+    return aluno.nome + " tem " + aluno.idade + " anos."
 }
 
-console.log(alunosComMenosDe30);
+console.log(alunos.map(nomeIdade));
+
+
+
+// modificar objeto sem modificar a variavel original:
+
+let alunoA = {nome: "igor", idade: 15}
+
+let alunoB = { ...alunoA }
+
+alunoB.idade = 25
