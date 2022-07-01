@@ -13,3 +13,10 @@ console.log(copia)
 console.log(aluno);
 
 
+// selecionar todo o resto menos nome e matricula:
+
+const {matricula, nome, ...resto} = aluno
+
+console.log(resto);
+
+
