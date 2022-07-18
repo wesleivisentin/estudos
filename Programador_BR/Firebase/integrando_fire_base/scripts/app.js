@@ -1,9 +1,12 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
 
-import { getFirestore } from "firebase/firestore";
+import { initializeApp } from '../firebase/app';
+import { getAuth } from '../firebase/auth';
+import { getFirestore } from '../firebase/firestore'
 
-const firebaseConfig = initializeApp( {
+
+const firebaseApp = initializeApp( {
   apiKey: "AIzaSyDKRRy4XkHKNeIZbrRUo6j7Z1yhVoyUtn4",
   authDomain: "colegio-eb456.firebaseapp.com",
   databaseURL: "https://colegio-eb456-default-rtdb.firebaseio.com",
@@ -16,9 +19,10 @@ const firebaseConfig = initializeApp( {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const auth = getAuth(firebaseApp)
+const db = getFirestore(firebaseApp)
 
-
-const db = firebase.firestore();
+// const db = firebase.firestore();
 
 db.collection("colegio").get().then((snapshot)=>{
 
