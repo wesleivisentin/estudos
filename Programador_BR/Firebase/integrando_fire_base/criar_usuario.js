@@ -35,12 +35,20 @@ function login() {
     let userEmail = "novoteste@teste.com"
     let userPassword = "abc123"
 
+    authsetPersistence(firebase.auth.Auth.persistence.LOCAL).then(()=>{
+    //locas é o padrao
+    //session fica logado só na aba
+    //none desloga se recarregar a pagina
+
     auth.signInWithEmailAndPassword(userEmail, userPassword)
         .then(loggedUser => {
             console.log(loggedUser);
         }).catch(error => {
             console.log(error);
         })
+    }).catch(error=>{
+        console.log(error);
+    })
 
     let user = auth.currentUser
 
@@ -67,4 +75,6 @@ function logout() {
     })
 }
 
-setTimeout(login, 2000)
+// setTimeout(login, 2000)
+
+setTimeout(logout, 2000)
