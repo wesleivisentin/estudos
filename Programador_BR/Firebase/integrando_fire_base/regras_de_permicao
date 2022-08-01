@@ -1,7 +1,6 @@
 Algumas regras comuns:
 
 
-
 Somente Usuários autenticados podem ler ou modificar:
 
 service cloud.firestore {
