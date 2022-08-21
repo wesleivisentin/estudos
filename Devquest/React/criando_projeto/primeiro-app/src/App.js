@@ -1,11 +1,15 @@
 
 import './App.css';
+import Button from './components/button/button';
 
 function App() {
   return (
     <>
-      <h1>Titulo exemplo</h1>
-    </>
+      <Button/>
+      <Button/>
+      <Button/>
+      </>
+    
   );
 };
 
