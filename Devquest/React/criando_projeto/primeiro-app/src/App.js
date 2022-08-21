@@ -10,7 +10,12 @@ function App() {
       <Button/>
       <Button/>
 
-      <Card/>
+      <Card>
+      <h3>{props.title}</h3>
+        <p>esse é um texto card</p>
+      </Card>
+      <Card></Card>
+      <Card></Card>
       </>
     
   );
