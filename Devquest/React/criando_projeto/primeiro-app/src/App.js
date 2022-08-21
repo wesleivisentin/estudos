@@ -11,7 +11,7 @@ function App() {
       <Button/>
 
       <Card>
-      <h3>{props.title}</h3>
+      <h3>Titulo</h3>
         <p>esse é um texto card</p>
       </Card>
       <Card></Card>

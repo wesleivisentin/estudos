@@ -5,12 +5,21 @@ import './card.css'
     // return(
     //     <div className="card">
     //     <h3>{title}</h3>
+    /////////////////////////////////////////
+// const Card = (props)=> {
+//     return(
+//         <div className="card">
+//         <h3>{props.title}</h3>
+//         <p>esse é um texto card</p>
+//     </div>
+//     )
+// }
+/////////////////////////////////////////////////////
 const Card = (props)=> {
     return(
         <div className="card">
-        <h3>{props.title}</h3>
-        <p>esse é um texto card</p>
-    </div>
+        {props.children}
+        </div>
     )
 }
 
