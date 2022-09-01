@@ -44,5 +44,5 @@ it("Deve cobrar valor de frete quando o valor dos produtos for menor que 500", (
 
       //ASSERT 
     expect(resultado).toBe(150)
-
+    
 });
