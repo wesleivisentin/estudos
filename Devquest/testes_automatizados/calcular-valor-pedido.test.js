@@ -49,6 +49,7 @@ it("Deve cobrar valor de frete quando o valor dos produtos for menor que 500", (
 
 
 
+
 it("Deve cobrar valor de frete caso valos dos produtos seja EXATAMENTE 500", ()=> {
 
     const meuPedido = {
@@ -63,3 +64,20 @@ it("Deve cobrar valor de frete caso valos dos produtos seja EXATAMENTE 500", ()=
     expect(resultado).toBe(600)
 })
 
+
+// CASO OS ESTADOS DE ENTREGA SEJAM RS OU Screen, DEVE SER ACRESCIDO UM VALOR DE 30% NA ENTREGA
+
+it('deve adicionar um acrescimo de 20% no valor da entrega do pedido caso seja RS', ()=> {
+
+    const pedidoComEstadoRS = {
+        estado: 'RS',
+        itens: [
+            {nome: 'Sanduíche bem caro', valor: 500},
+            {nome: 'entrega', valor: 100, entrega: true}
+        ]
+    };
+
+    const resultado = calcularValorPedido(pedidoComEstadoRS);
+
+    expect(resultado).toBe(620)
+})
