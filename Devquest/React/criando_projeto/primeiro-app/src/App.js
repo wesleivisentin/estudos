@@ -12,7 +12,7 @@ function App() {
 
       <Card>
       <h3>Titulo</h3>
-        <p>esse é um texto card</p>
+        <p>Esse é um texto card</p>
       </Card>
       <Card></Card>
       <Card></Card>
